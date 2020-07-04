@@ -11,17 +11,14 @@ export default {
   name: 'Home',
   data() {
     return {
-      count: 0,
+      count: localStorage.getItem('count'),
     };
   },
   methods: {
     update() {
-      this.count += 1;
-      localStorage.setItem('count', this.count);
+      const count = Number(localStorage.getItem('count'));
+      localStorage.setItem('count', count + 1);
     },
-  },
-  created() {
-    this.count = Number(localStorage.getItem('count'));
   },
 };
 </script>
