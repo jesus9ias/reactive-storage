@@ -25,5 +25,8 @@ npm run test
 npm run lint
 ```
 
+### Reference
+CSS Tricks [example](https://css-tricks.com/how-to-make-localstorage-reactive-in-vue/)
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
